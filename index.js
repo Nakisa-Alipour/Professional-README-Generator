@@ -8,37 +8,38 @@ const generateREADME = ({github, email, title, description, license, installatio
     tests, usage, contributing}) =>
     `# ${title}
 
-    ## Description
-    ${description}
+## Description
+${description}
 
-    ## Table of Contents
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
-    - [Questions](#questions)
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-    ## Installation
-    ${installation}
+## Installation
+${installation}
 
-    ## Usage
-    ${usage}
+## Usage
+${usage}
 
-    ## Contributing
-    ${contributing}
+## Contributing
+${contributing}
 
-    ## Tests
-    ${tests}
+## Tests
+${tests}
 
-    ## License
-    ![License](https://img.shields.io/badge/License-${license}-blue.svg)
+## License
+![License](https://img.shields.io/badge/License-${license}-blue.svg)
 
-    This project is licensed under the ${license} license.
+This project is licensed under the ${license} license.
 
-    ## Questions
-    If you have any questions, please contact me at ${email}. You can also check out my GitHub profile at https://github.com/${github}.
+## Questions
+If you have any questions, please contact me at ${email}. You can also check out my GitHub profile at https://github.com/${github}.
 `;
+
 
 
 inquirer
@@ -82,7 +83,7 @@ inquirer
       {
         type: 'input',
         name: 'usage',
-        message: 'Please provide usage information regarding this project',
+        message: 'Please provide usage information regarding this project.',
       },
       {
         type: 'input',
