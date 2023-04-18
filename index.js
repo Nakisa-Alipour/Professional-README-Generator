@@ -1,8 +1,46 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const fs = require('fs');
 
 // TODO: Create an array of questions for user input
-const questions = [];
+//const questions = [];
+
+const generateREADME = ({github, email, title, description, license, installation, 
+    test, table, usage, contribution}) =>
+    `# ${title}
+
+    ## Description
+    ${description}
+
+    ## Table of Contents
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [License](#license)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
+    - [Questions](#questions)
+
+    ## Installation
+    ${installation}
+
+    ## Usage
+    ${usage}
+
+    ## License
+    ![License](https://img.shields.io/badge/License-${license}-blue.svg)
+
+    This project is licensed under the ${license} license.
+
+    ## Contributing
+    ${contributing}
+
+    ## Tests
+    ${tests}
+
+    ## Questions
+    If you have any questions, please contact me at ${email}. You can also check out my GitHub profile at https://github.com/${github}.
+`;
+
 
 inquirer
   .prompt([
@@ -30,18 +68,7 @@ inquirer
         type: 'checkbox',
         name: 'license',
         message: 'What is the application license?',
-        choices: [
-          "MIT License",
-          "Apache License 2.0",
-          "GNU General Public License (GPL)",
-          "BSD 3-Clause 'New' or 'Revised' license",
-          "Mozilla Public License 2.0",
-          "Creative Commons License",
-          "The Unlicense",
-          "Eclipse Public License 2.0",
-          "GNU Lesser General Public License (LGPL)",
-          "Common Development and Distribution License (CDDL)"
-        ],
+        choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None'],
       },
       {
         type: 'input',
@@ -55,7 +82,7 @@ inquirer
       },
       {
         type: 'input',
-        name: 'table of content',
+        name: 'table',
         message: 'what is included in the table of contents?',
       },
       {
