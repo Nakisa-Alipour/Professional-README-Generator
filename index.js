@@ -2,8 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
-//const questions = [];
+
 
 const generateREADME = ({github, email, title, description, license, installation, 
     tests, usage, contributing}) =>
@@ -26,16 +25,16 @@ const generateREADME = ({github, email, title, description, license, installatio
     ## Usage
     ${usage}
 
-    ## License
-    ![License](https://img.shields.io/badge/License-${license}-blue.svg)
-
-    This project is licensed under the ${license} license.
-
     ## Contributing
     ${contributing}
 
     ## Tests
     ${tests}
+
+    ## License
+    ![License](https://img.shields.io/badge/License-${license}-blue.svg)
+
+    This project is licensed under the ${license} license.
 
     ## Questions
     If you have any questions, please contact me at ${email}. You can also check out my GitHub profile at https://github.com/${github}.
@@ -65,7 +64,7 @@ inquirer
         message: 'Please write a short description of your project.',
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         message: 'What is the application license?',
         choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None'],
