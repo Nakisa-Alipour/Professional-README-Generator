@@ -6,7 +6,7 @@ const fs = require('fs');
 //const questions = [];
 
 const generateREADME = ({github, email, title, description, license, installation, 
-    test, table, usage, contribution}) =>
+    tests, usage, contributing}) =>
     `# ${title}
 
     ## Description
@@ -77,13 +77,8 @@ inquirer
       },
       {
         type: 'input',
-        name: 'test',
+        name: 'tests',
         message: 'What is commend line to run tests?',
-      },
-      {
-        type: 'input',
-        name: 'table',
-        message: 'what is included in the table of contents?',
       },
       {
         type: 'input',
@@ -92,7 +87,7 @@ inquirer
       },
       {
         type: 'input',
-        name: 'contribution',
+        name: 'contributing',
         message: 'What is the contribution to the repo?',
       },
     ])
@@ -109,10 +104,10 @@ inquirer
     
   
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+//function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+//function init() {}
 
 // Function call to initialize app
-init();
+//init();
