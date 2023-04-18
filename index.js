@@ -24,7 +24,7 @@ inquirer
     {
         type: 'input',
         name: 'description',
-        message: 'Please write a short description for this project.',
+        message: 'Please write a short description of your project.',
     },
     {
         type: 'checkbox',
@@ -45,13 +45,18 @@ inquirer
       },
       {
         type: 'input',
-        name: 'table of content',
-        message: 'what is included in the table of contents?',
+        name: 'installation',
+        message: 'What is the instruction or commend line to be used for installation?',
       },
       {
         type: 'input',
-        name: 'installation',
-        message: 'What is installation instruction?',
+        name: 'test',
+        message: 'What is commend line to run tests?',
+      },
+      {
+        type: 'input',
+        name: 'table of content',
+        message: 'what is included in the table of contents?',
       },
       {
         type: 'input',
@@ -60,12 +65,14 @@ inquirer
       },
       {
         type: 'input',
-        name: 'linkedin',
-        message: 'Enter your LinkedIn URL.',
+        name: 'contribution',
+        message: 'What is the contribution to the repo?',
       },
     ])
     .then((answers) => {
-      const htmlPageContent = generateHTML(answers);
+        console.log("Creating README file!")
+        const readmePageContent = generateREADME(answers);
+    };
   
     
 
