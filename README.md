@@ -9,13 +9,13 @@ As a developer, I want a README generator so that I can quickly create a profess
 
 
 ## Acceptance Criteria
-The application accepts user input through the command line
-The generated README contains a title of the project and sections for Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-The project title is displayed as the title of the README
-The Description, Installation, Usage, Contributing, and Tests sections are populated with the user's input
-The License section includes a badge for the selected license and a notice explaining which license the application is covered under
-The Questions section includes the user's GitHub username with a link to their profile and their email address with instructions on how to contact them with additional questions
-Clicking on the links in the Table of Contents takes the user to the corresponding section of the README
+- The application accepts user input through the command line
+- The generated README contains a title of the project and sections for Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+- The project title is displayed as the title of the README
+- The Description, Installation, Usage, Contributing, and Tests sections are populated with the user's input
+- The License section includes a badge for the selected license and a notice explaining which license the application is covered under
+- The Questions section includes the user's GitHub username with a link to their profile and their email address with instructions on how to contact them with additional questions
+- Clicking on the links in the Table of Contents takes the user to the corresponding section of the README
 
 
 ## Installation
