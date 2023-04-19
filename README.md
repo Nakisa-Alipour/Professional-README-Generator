@@ -19,7 +19,7 @@ As a developer, I want a README generator so that I can quickly create a profess
 - Clicking on the links in the Table of Contents takes the user to the corresponding section of the README
 
 
-##Installation
+## Installation
 To use this application, you will need to have Node.js installed on your computer.
 
 - Clone the repository to your local machine
