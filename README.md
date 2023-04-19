@@ -36,10 +36,12 @@ To generate a README file for your project:
 - Once you have completed all the prompts, a README file will be generated in the folder
 
 Here's a screen shot of created a README file as an example:
+
 ![README file generator](https://user-images.githubusercontent.com/124220654/232969011-7921e95d-98e1-44ee-8521-a0d03649a54f.jpg)
 
 
 Here's a link to a walkthrough video demonstrating the functionality of the application:
+
 [![play image](https://user-images.githubusercontent.com/124220654/232980789-98efdcfd-579f-4389-a10f-8822b54bbeaa.jpg)](https://clipchamp.com/watch/Dne8sd75Qkl)
 
 
