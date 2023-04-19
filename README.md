@@ -40,6 +40,7 @@ Here's a screen shot of created a README file as an example:
 
 
 Here's a link to a walkthrough video demonstrating the functionality of the application:
+![play image](https://user-images.githubusercontent.com/124220654/232980789-98efdcfd-579f-4389-a10f-8822b54bbeaa.jpg)(https://clipchamp.com/watch/Dne8sd75Qkl)
 
 
 
