@@ -33,7 +33,11 @@ To generate a README file for your project:
 - In the terminal, navigate to the root directory of the cloned repository
 - Run node index.js
 - Follow the prompts and enter the requested information about your project
-- Once you have completed all the prompts, a README file will be generated in the dist folder
+- Once you have completed all the prompts, a README file will be generated in the folder
+
+Here's a screen shot of created a README file as an example:
+![README file generator](https://user-images.githubusercontent.com/124220654/232969011-7921e95d-98e1-44ee-8521-a0d03649a54f.jpg)
+
 
 Here's a link to a walkthrough video demonstrating the functionality of the application:
 
