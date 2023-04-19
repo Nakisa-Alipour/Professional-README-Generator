@@ -7,9 +7,9 @@ const fs = require('fs');
 const generateREADME = ({github, email, title, description, license, installation, 
     tests, usage, contributing}) =>
     `# ${title}
-
+![License](https://img.shields.io/badge/License-${license}-blue.svg)
 ## Description
-${description}
+    ${description}
 
 ## Table of Contents
 - [Installation](#installation)
@@ -20,25 +20,22 @@ ${description}
 - [Questions](#questions)
 
 ## Installation
-${installation}
+    ${installation}
 
 ## Usage
-${usage}
+    ${usage}
 
 ## Contributing
-${contributing}
+    ${contributing}
 
 ## Tests
-${tests}
+    ${tests}
 
 ## License
-![License](https://img.shields.io/badge/License-${license}-blue.svg)
-
-This project is licensed under the ${license} license.
+    This project is licensed under the ${license} license.
 
 ## Questions
-If you have any questions, please contact me at ${email}. You can also check out my GitHub profile at https://github.com/${github}.
-`;
+    If you have any questions, please contact me at ${email}. You can also check out my GitHub profile at https://github.com/${github}.`;
 
 
 
@@ -68,7 +65,7 @@ inquirer
         type: 'list',
         name: 'license',
         message: 'What is the application license?',
-        choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None'],
+        choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'unspecified'],
       },
       {
         type: 'input',
@@ -93,6 +90,7 @@ inquirer
     ])
     .then((answers) => {
         const readmePageContent = generateREADME(answers);
+        const license = answers.license;
 
         fs.writeFile('README.md', readmePageContent, (err) =>
         err ? console.log(err) : console.log('Successfully created README.md file!')
